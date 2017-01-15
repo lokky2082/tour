@@ -1,0 +1,30 @@
+.b-empty-btn {
+  color:currentColor;
+  @extend .row-only;
+  @extend .r-vh-center;
+  width: 220px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background: none;
+  outline: none;
+  opacity: 0.8;
+  color: #010101;
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 17px;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    color: #ffffff;
+    border: 1px solid  rgba(0, 0, 0, 0.5);
+  }
+  &:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    color: #ffffff;
+  }
+}

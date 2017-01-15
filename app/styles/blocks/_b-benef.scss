@@ -1,0 +1,28 @@
+.b-benef {
+   @extend .row-only;
+   @extend .r-h-center;
+   padding: 62px 0 0 0;
+}
+.b-benef_item {
+  @extend .col-only;
+  @extend .c-h-center;
+  width:230px;
+  text-align: center;
+}
+.b-benef_item-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 21px 0 9px 0;
+  line-height: 1;
+}
+.b-benef_item-text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.b-benef_item-desc {
+  color: $third-color;
+}

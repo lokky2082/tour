@@ -1,0 +1,5 @@
+mixin b-tab-list(data)
+    .b-tab-list&attributes(attributes)
+        if(data && data.length)
+                each item, index in data
+                    button(data-num=index).tab-list_item.j-tab #{item.text}

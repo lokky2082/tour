@@ -1,0 +1,21 @@
+.b-main-logo {
+  flex:1;
+   img {
+     width:100%;
+   }
+}
+.main-logo_text {
+  color:currentColor;
+  margin-top: 112px;
+  text-align: center;
+  &:before {
+    content:'';
+    width: 19px;
+    height: 21px;
+    background: url("../images/svg/local.svg")no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 25px;
+    display: inline-block;
+  }
+}

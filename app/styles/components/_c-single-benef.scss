@@ -1,0 +1,15 @@
+.c-single-benef {
+ color:$third-color;
+ background: url("../images/dream.jpg");
+ background-size: cover;
+ background-position: bottom;
+ padding: 50px 0 85px 0;
+ margin-bottom: 51px;
+ .b-text {
+   max-width: 800px;
+
+   p {
+      color: $third-color;
+   }
+ }
+}

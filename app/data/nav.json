@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Главная",
+    "url": "home.html"
+  },
+  {
+    "title": "Каталог",
+    "url": "catalog.html"
+  },
+  {
+    "title": "Акции",
+    "url": "actions.html"
+  }
+]

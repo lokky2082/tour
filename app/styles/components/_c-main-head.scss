@@ -1,0 +1,25 @@
+.c-main-head {
+  height: 65px;
+  background-color: #fff;
+  color: #ff9900;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 1000;
+    display: none;
+  a {
+    color: #ff9900;
+    text-decoration: none;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  &.fixed{
+    position: fixed;
+  }
+  @include for-tablet-portrait-up  {
+    display: block;
+  }
+}

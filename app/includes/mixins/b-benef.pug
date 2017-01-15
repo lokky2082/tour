@@ -1,0 +1,9 @@
+mixin b-benef(data)
+    .b-benef&attributes(attributes)
+        if(data && data.length)
+                each item, index in data
+                    .b-benef_item
+                         img(src='images/svg/benef/'+item.src).b-benef_item-img
+                         .b-benef_item-text
+                           h3.b-benef_item-title #{item.title}
+                           p.b-benef_item-desc #{item.text}

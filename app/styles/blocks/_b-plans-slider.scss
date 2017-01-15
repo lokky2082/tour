@@ -1,0 +1,68 @@
+.b-plans-slider {
+width:100%;
+}
+.plans-slider_item {
+  position:absolute;
+  width:100%;
+    &:hover .plans-slider_item-search-ico {
+        opacity: 1;
+    }
+    &:hover .plans-slider_item-search-ico {
+      filter: brightness(1.4) grayscale(80%);
+    }
+}
+.plans-slider_compass {
+  position: absolute;
+  top:0px;
+  right:0px;
+
+}
+.plans-slider_plan {
+    width: 550px;
+    &:hover {
+      filter: brightness(1.4) grayscale(80%);
+      cursor: pointer;
+    }
+
+
+}
+.plans-slider_item-search-ico {
+    opacity: 0;
+    position: absolute;
+    z-index:10;
+    top: 35%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    cursor: pointer;
+    
+    svg,img {
+        width: 100%;
+        height: 100%;
+    }
+    &:hover +.plans-slider_plan {
+      filter: brightness(1.4) grayscale(80%);
+    }
+}
+.slider-arr_item {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 500;
+  &.prev {
+    left:-10%;
+    background: url("../images/svg/arrow_left.svg")no-repeat;
+  }
+  &.next {
+    right:0px;
+
+    background: url("../images/svg/arrow_right.svg")no-repeat;
+  }
+}

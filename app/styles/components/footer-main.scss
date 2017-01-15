@@ -1,0 +1,25 @@
+.footer-main {
+color:$third-color;
+height: 100px;
+background-color: #1a2e42;
+padding: 32px 0;
+font-family: "Open Sans";
+
+font-size: 14px;
+}
+.footer-main_logo {
+  width: 273px;
+  img {
+    width:100%;
+  }
+}
+.footer-main_text {
+  p {
+    margin: 0;
+    padding: 0;
+    color: $third-color;
+  }
+  a {
+    color:currentColor;
+  }
+}

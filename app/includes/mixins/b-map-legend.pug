@@ -1,0 +1,7 @@
+mixin b-map-legend(data)
+    .b-map-legend&attributes(attributes)
+        if(data && data.length)
+                each item, index in data
+                    .map-legend_item
+                      img(src='images/svg/mapico/'+item.src).map-legend_item-img
+                      p.map-legend_item-text #{item.text}

@@ -1,0 +1,8 @@
+mixin nav(data, current)
+    nav.b-nav&attributes(attributes)
+        if(data && data.length)
+            ul.nav_list
+                each item, index in data
+                    li.nav_item.nav-item(class=(index === current ? "nav-item__current" : undefined))
+                         a(href=item.url).nav-item_link.j-link
+                                span.nav-item_title #{item.title}

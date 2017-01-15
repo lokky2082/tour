@@ -1,0 +1,21 @@
+.c-form
+{
+    display: none;
+
+    padding: 54px 0 87px 0;
+
+    color: $third-color;
+    background: url('../images/bg_blue.jpg');
+    background-position: bottom;
+    background-size: cover;
+    p
+    {
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: 400;
+
+        margin: 0;
+
+        color: $third-color;
+    }
+}

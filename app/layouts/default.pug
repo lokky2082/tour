@@ -1,0 +1,12 @@
+include ../includes/components/head.pug
+body
+    | <!--[if lt IE 10]>
+    |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    | <![endif]-->
+
+    include ../includes/mixins/nav.pug
+    header.c-main-head.j-stick-header
+      .main-wr.row-only.r-v-center.r-sp-b
+       block header
+    block content
+    include ../includes/components/footer.pug

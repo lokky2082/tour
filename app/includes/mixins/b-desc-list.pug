@@ -1,0 +1,10 @@
+mixin b-desc-list(data)
+    .b-desc-list&attributes(attributes)
+        if(data && data.length)
+                each item, index in data
+                    .desc-list_item
+                        .desc-list_img-holder
+                          img(src='images/desc/'+item.src).desc-list_item-img
+                        .desc-list_item-text
+                           h3.desc-list_item-title #{item.title}
+                           p.desc-list_item-desc #{item.text}

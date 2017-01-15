@@ -1,0 +1,10 @@
+.b-floor-plan {
+  background: url("../images/bg_first-floor.jpg")no-repeat;
+  background-size: 70%;
+  background-position: right bottom;
+  padding: 40px 0;
+
+  @media all and (min-width:1601px) {
+      background-size: 58%;
+  }
+}

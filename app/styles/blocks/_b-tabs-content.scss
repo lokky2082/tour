@@ -1,0 +1,14 @@
+.b-tabs-content {
+   margin-left: 166px;
+   position: relative;
+}
+.tabs-content_item {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  display:none;
+  &.active{
+      display:block;
+  }
+}

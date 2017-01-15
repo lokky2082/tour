@@ -1,0 +1,14 @@
+.c-first-screen {
+  background: url("../images/first.jpg")no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0 0 0;
+  height: 50vh;
+  color:#fff;
+  position: relative;
+  @include for-tablet-portrait-up  {
+    height: 100vh;
+  }
+}

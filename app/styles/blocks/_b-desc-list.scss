@@ -1,0 +1,42 @@
+.b-desc-list {
+ @extend .row-only;
+ @extend .r-sp-b;
+ padding: 70px 0 50px 0;
+}
+.desc-list_item {
+  width: 379px;
+
+}
+.desc-list_item-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 37px 0 27px 0;
+  text-align:center;
+  text-transform: uppercase;
+  color: $second-color;
+}
+.desc-list_item-desc {
+  font-family: "Open Sans";
+  color: $second-color;
+}
+.desc-list_img-holder {
+  width:100%;
+  height:265px;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    content:'';
+    background: url("../images/half-ring.png")no-repeat;
+    background-size: contain;
+    width: 99px;
+    height: 246px;
+    display:block;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  img {
+    width:100%;
+  }
+}

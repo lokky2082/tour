@@ -1,0 +1,54 @@
+.b-gen-plan-img {
+   background: url("../images/bg_benef.jpg");
+   background-size: cover;
+   background-position: bottom;
+   margin-top: 68px;
+
+}
+.gen-plan-img_plan {
+  position: relative;
+  width: 577px;
+  height: 342px;
+  img {
+    height: 532px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.gen-plan-img_bg {
+  width:100%;
+  height:100%;
+  transform: skewX(20deg);
+  background: #fffef7;
+}
+.gen-plan-img_text {
+  flex:1;
+}
+.gen-plan-img_big {
+  // @extend .col-only;
+  // @extend .c-vh-center;
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  color: #000;
+  background-color: $modal-bg-color;
+  z-index: 1100;
+  display:none;
+
+}
+.gen-plan-img-inside {
+  position: relative;
+  width: 36%;
+  height: 100%;
+  margin: 0 auto;
+  img {
+    // width: 100%;
+    height:90%;
+    flex:1;
+
+  }
+}

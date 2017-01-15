@@ -1,0 +1,22 @@
+.b-phone-header {
+  text-align: right;
+}
+.phone-header_num {
+  font-size: 20px;
+
+}
+.phone-header_text {
+  @extend .row-only;
+  @extend .r-v-center;
+  @extend .r-end;
+  margin-top: 5px;
+  cursor: pointer;
+  &:before {
+    content:'';
+    width: 20px;
+    height: 20px;
+    background: url('../images/svg/phone.svg');
+    background-size: contain;
+    margin-right: 5px;
+  }
+}

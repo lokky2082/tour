@@ -1,0 +1,80 @@
+extends layouts/default
+
+block header
+  include includes/blocks/b-logo-header.pug
+  - var currentNav = 0
+  - var nav = [{"title":"sightseeing tours","url":"#sightseeing_tours"},{"title":"congress facilities","url": "#congress_facilities"},{"title":"ecotourism","url": "#ecotourism"},{"title":"food","url": "#food"},{"title":"contact us","url": "#contact_us"}]
+  +nav(nav, currentNav)
+
+block content
+  include includes/components/c-first-screen
+  .b-benef-list#benefits
+    .main-wr.row-only.r-sp-b.r-wrap
+      .benef-list_item Visit the Urals, the place with the rich history, rich culture and beautiful nature.
+      .benef-list_item Do business in the Urals, take the opportunities of one of the main business cetres in Russia.
+      .benef-list_item Entrust the organization of your events and free-time activities to the experienced planner.
+  .j-anckor#sightseeing_tours(data-pos="")
+  .main-wr
+   .b-tours-list
+     #sightseeing_tours
+      article.tours-list_item
+        .tours-item_img
+           img(src="images/1t.jpg", alt="Sightseeing tours")
+        .tours-item_text
+             h2.tours-item_title Sightseeing tours
+             p Visit the Urals, the place with the rich history, rich culture and beautiful nature. Do business in the Urals, take the opportunities of one of the main business cetres in Russia. Entrust the organization of your events and free-time activities to the experienced planner.
+             button.b-empty-btn Read more
+      #congress_facilities
+      article.tours-list_item
+         .tours-item_img
+           img(src="images/2t.jpg", alt="Congress facilities")
+         .tours-item_text
+              h2.tours-item_title Congress facilities
+              p Yekaterinburg is a main megalopolis in the Urals. It is a famed place for business-summits, exhibitions and professional congresses. Choose Yekaterinburg as a place for your event and we will help you with organization. We will find a conference hall according to the number of participants and technical requirements. We will organize the accomodation, comfortable transfers and unforgettable entertainments for you and your guests.
+              button.b-empty-btn Read more
+      #ecotourism
+      article.tours-list_item
+         .tours-item_img
+          img(src="images/3t.jpg", alt="Congress facilities")
+         .tours-item_text
+              h2.tours-item_title Ecotourism
+              p The Ural region is one of the most beautiful places in Russia. The nature of this region is rich and multifarious. We will show the region between Europe and Asia at it finest. Our company organizes rafting on the Urals rivers, hunting, mountain hiking, horse riding, reindeer or dog sledding, snowmobiles or  off-road vehicles racing.
+              button.b-empty-btn Read more
+      #food
+      article.tours-list_item
+         .tours-item_img
+           img(src="images/4t.jpg", alt="Congress facilities")
+         .tours-item_text
+              h2.tours-item_title Food
+              p Hundreds of folks live in the Urals. So the cuisine of the region is multifarious. There you can find Uralic, Asian, European and International cuisines. Our company is happy to take care of your guests’ nutrition and we are ready to organize a special food and gastro tours.
+              button.b-empty-btn Read more
+  .b-contacts
+    .main-wr
+      .contacts_inner
+        h2.u-big-title Send request
+        h3.u-sub-title We are ready to succeed in your objects
+        form(action="", method="post", class="b-contact-form")
+          .row-only.r-wrap
+            input(type="email", placeholder="email")
+            input(type="text", placeholder="name or company")
+          .row-only.r-wrap
+            textarea(placeholder="your massage")
+            button(type="submit", class="b-ico-btn")
+              span send
+              span.ico-btn_img
+  .b-social
+    .main-wr.row-only.r-sp-b.r-wrap
+      .social-ico_list
+        .social_text Follow us in social
+        a.social_ico(href="#")
+          img(src="images/face.png", alt="")
+        a.social_ico(href="#")
+          img(src="images/inst.png", alt="")
+      .social-ico_list
+       .social_text © 2016, Gems Ring of the Urals
+  footer.b-main-footer
+    .main-wr
+      p Tel: +7 (343) 385-84-85
+      p Email:
+        a(href="mailto:info@vistarussia.com") info@vistarussia.com
+      p 42 Gogol street, Yekaterinburg, Russia, 620026

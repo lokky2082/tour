@@ -1,0 +1,41 @@
+.b-full-btn {
+  @extend .row-only;
+  @extend .r-vh-center;
+  width: 260px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #ef9105;
+  outline: none;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration: none;
+  &:hover {
+    background-color: #e08804;
+    span{
+      &:after {
+        transform: translateX(50%);
+      }
+    }
+  }
+  &:active {
+    background-color: #e08804;
+  }
+  span {
+    position: relative;
+    padding-right:44px;
+    &:after {
+      content: '';
+      background: url('../images/arr2.svg')no-repeat;
+      background-size: 28px 20px;
+      width: 28px;
+      height: 20px;
+      display:block;
+      position:absolute;
+      right:0;
+      top: 6px;
+      transition: transform 0.5s ease;
+    }
+  }
+}
