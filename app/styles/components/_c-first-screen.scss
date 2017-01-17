@@ -8,6 +8,9 @@
   height: 50vh;
   color:#fff;
   position: relative;
+  .main-wr {
+    position: relative;
+  }
   @include for-tablet-portrait-up  {
     height: 100vh;
   }

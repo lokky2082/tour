@@ -1,10 +1,15 @@
 .b-main-footer {
-  height: 37px;
+ padding: 10px 0;
+  @include for-tablet-landscape-up {
+    height: 37px;
+    padding: 0;
+  }
   .main-wr {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
   }
   background-color: #4d4d4d;
 
