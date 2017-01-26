@@ -16,17 +16,22 @@
   padding: 0 15px;
   height:100%;
   opacity: 0.8;
-
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  height:100%;
+  border-bottom: 2px solid transparent;
+
   @include for-tablet-landscape-up {
     font-size: 16px;
   }
   &.active{
       opacity:1;
+
+      border-bottom: 2px solid #ff9900;
   }
   &:hover {
       opacity:1;
+        border-bottom: 2px solid #ff9900;
   }
 }

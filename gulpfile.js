@@ -175,10 +175,9 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app/includes/components/'));
 });
 
-gulp.task('build', ['html', 'images', 'fonts'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'styles', 'scripts'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
-
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });

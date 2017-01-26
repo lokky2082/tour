@@ -11,6 +11,9 @@
   @include for-tablet-portrait-up  {
     display: flex;
   }
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  }
 }
 .learn-more_arr {
   margin-left: 7px;

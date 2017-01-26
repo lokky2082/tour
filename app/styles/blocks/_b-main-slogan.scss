@@ -14,33 +14,32 @@
    transform: translate(0, -60%);
  }
  .b-full-btn {
-  margin: 0 auto;
+  margin: 20px auto;
   @include for-tablet-portrait-up  {
     margin: 0 ;
   }
  }
 }
 .main-slogan_title {
-  font-size: 2.5rem;
+ font-size: 2.5rem;
  font-weight: 700;
  text-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.3);
  line-height: 1.5;
  margin-top: 0;
-width:100vw;
+ width:100vw;
  @include for-tablet-portrait-up  {
    font-size: 3rem;
    width:100vw;
  }
  @include for-tablet-landscape-up {
     font-size: 4.5rem;
-
  }
 }
 .main-slogan_text {
   font-size: 24px;
- font-weight: 700;
- margin: 0;
- padding: 0;
- line-height: 1;
- color: $third-color;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: $third-color;
 }

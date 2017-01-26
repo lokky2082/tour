@@ -50,10 +50,14 @@ color: #010101;
 color: #010101;
   text-transform: uppercase;
 }
+textarea {
+  font-family: inherit;
+  padding: 10px;
+}
 .main-wr
 {
     width: 100%;
-    max-width: 1020px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     padding: 0 10px;
